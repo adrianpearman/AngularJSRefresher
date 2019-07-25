@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weatherApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AngularJS Weather Forecast SPA</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="/" class="navbar-brand">AngularJS Weather App</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="navbar-item">
+              <a href="#/">
+                Home
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <ng-view></ng-view>
+    </div>
+
+    <!-- load angular via CDN -->
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular-messages.min.js"></script>
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular-resource.min.js"></script>
+    <script src="//code.angularjs.org/1.3.0-rc.1/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="./routes/routes.js"></script>
+    <script src="./services/services.js"></script>
+    <script src="./controllers/controllers.js"></script>
+    <script src="./directives/directives.js"></script>
+  </body>
+</html>

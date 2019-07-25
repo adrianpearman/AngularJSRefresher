@@ -1,0 +1,15 @@
+<h1>Weather Forecast For: {{ titleCase(city) }}</h1>
+<p><a href="#/">Back To Search</a></p>
+<hr />
+<search-header days="{{ days }}"></search-header>
+<hr />
+<ul class="list-group">
+  <search-result
+    ng-repeat="result in resultList"
+    result="result"
+    date-format="MMM d, y"
+    convert-time="convertTime(time)"
+    convert-to-standard="convertToFarenheit(temp)"
+  >
+  </search-result>
+</ul>
