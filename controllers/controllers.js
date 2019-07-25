@@ -41,7 +41,7 @@ weatherApp.controller("forecastController", [
 
     var request = {
       method: "GET",
-      url: "http://api.openweathermap.org/data/2.5/forecast/daily",
+      url: "https://api.openweathermap.org/data/2.5/forecast/daily",
       params: {
         q: $scope.city,
         mode: "json",
